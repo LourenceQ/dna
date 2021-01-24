@@ -1,0 +1,203 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+    crossorigin="anonymous">
+
+    <title></title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="{% url 'dna_app:index' %}" class="navbar-brand">Home</a>
+
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#res_nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="res_nav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a href="{% url 'dna_app:quemsomos' %}" class="nav-link active">Quem Somos</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a id='li_prog' href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Terapias Integrativas</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="{% url 'dna_app:aconselhamento' %}" class="dropdown-item">Aconselhamento</a>
+                </li>
+                <li id='li_design'>
+                  <a href="{% url 'dna_app:constelacao_familiar' %}" class="dropdown-item">Constelação Familiar</a>
+                </li>
+                <li>
+                  <a href="{% url 'dna_app:meditacao_mentalizacao' %}" class="dropdown-item">Meditação/Mentalização</a>
+                </li>
+                <li>
+                  <a href="{% url 'dna_app:pnl' %}" class="dropdown-item">PNL</a>
+                </li>
+                <li>
+                  <a href="{% url 'dna_app:mandalas'%}" class="dropdown-item">Mandalas</a>
+                </li>
+                <li>
+                  <a href="{% url 'dna_app:agua_magnetizada'%}" class="dropdown-item">Água Magnetizada</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a id='li_prog' href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Treinamentos</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="{% url 'dna_app:desenvolvimento_pessoal' %}" class="dropdown-item">Desenvolvimento Pessoal</a>
+                </li>
+                <li id='li_design'>
+                  <a href="{% url 'dna_app:introducao_constelacao_familiar' %}" class="dropdown-item">Introdução à Constelação Familiar</a>
+                </li>
+                <li>
+                  <a href="{% url 'dna_app:agua_magnetizada_saude' %}" class="dropdown-item">Água Magnetizada & Saúde</a>
+                </li>
+                <li>
+                  <a href="{% url 'dna_app:arteterapia' %}" class="dropdown-item">Arteteraira</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="{% url 'dna_app:loja' %}" class="nav-link active">Loja Vrtual</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'dna_app:galeria' %}" class="nav-link">Galeria</a>
+            </li>
+          </ul>
+       </div>
+      </div>
+    </nav> <!--End of  Navigation Bar -->
+
+
+
+
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer class="bg-light text-dark pt-5 pb-4">
+      <div class="container text-left text-md-left">
+        <div class="row text-left text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Viver Alegre & Feliz</h5>
+            <p>Édina Peixoto Thomaz, é Terapeuta Holística, Palestrante Holística, e trabalha com as técnicas de terapias integrativas, holísticas, naturais, não invasivas.</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weght-bold text-warning">Terapias</h5>
+            <p>
+              <a href="" class="text-dark" style="text-decoration: none;">Meditação</a>
+            </p>
+            <p>
+              <a href="" class="text-dark" style="text-decoration: none;">Terapia Holística</a>
+            </p>
+            <p>
+              <a href="" class="text-dark" style="text-decoration: none;">Mentalização</a>
+            </p>
+            <p>
+              <a href="" class="text-dark" style="text-decoration: none;">Arteterapia</a>
+            </p>
+          </div>
+
+          <div class="col-md col-lg-2 col-xl-2 mx-auto- mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Cadastro</h5>
+            <p>
+              <a href="" class="text-dark" style="text-decoration: none;">Registrar</a>
+            </p>
+            <p>
+              <a href="" class="text-dark" style="text-decoration: none;">Login</a>
+            </p>
+            <p>
+              <a href="" class="text-dark" style="text-decoration: none;">Logout</a>
+            </p>
+            <p>
+              <a href="" class="text-dark" style="text-decoration: none;">Informações</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contato</h5>
+            <p>
+              <i class="fas fa-home mr-3"></i>  Cataguases, MG, Brasil
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i>  edina@viveralegreefeliz.com
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i>  55 32 9 8458 9238
+            </p>
+          </div>
+       </div>
+       <hr class="mb-4">
+       <div class="row align-items-center">
+         <div class="col-md-7 col-lg-8">
+          <p> Copyright 2021  All rights reseved by:
+            <a href="" style="text-decoration: none;">
+              <strong class="text-warning"> Lawrence</strong>
+            </a>
+          </p>
+         </div>
+
+         <div class="col-md-5 col-lg-4">
+           <div class="text-center text-md-right">
+             <ul class="list-unstyled list-inline">
+               <li class="list-inline-item">
+                 <a href="https://www.facebook.com/Viveralegreefelizcom-100601871990184/?modal=admin_todo_tour&notif_id=1610383825570294&notif_t=page_invite&ref=notif" class="btn-floating btn-sm text-dark" style="font-size:23px;"><i class="fab fa-facebook"></i></a>
+               </li>
+               <li class="list-inline-item">
+                <a href="https://www.facebook.com/Viveralegreefelizcom-100601871990184/?modal=admin_todo_tour&notif_id=1610383825570294&notif_t=page_invite&ref=notif" class="btn-floating btn-sm text-dark" style="font-size:23px;"><i class="fab fa-twitter"></i></a>
+               </li>
+               <li class="list-inline-item">
+                <a href="https://www.facebook.com/Viveralegreefelizcom-100601871990184/?modal=admin_todo_tour&notif_id=1610383825570294&notif_t=page_invite&ref=notif" class="btn-floating btn-sm text-dark" style="font-size:23px;"><i class="fab fa-google-plus"></i></a>
+               </li>
+               <li class="list-inline-item">
+                <a href="https://www.facebook.com/Viveralegreefelizcom-100601871990184/?modal=admin_todo_tour&notif_id=1610383825570294&notif_t=page_invite&ref=notif" class="btn-floating btn-sm text-dark" style="font-size:23px;"><i class="fab fa-linkedin"></i></a>
+               </li>
+               <li class="list-inline-item">
+                <a href="https://www.facebook.com/Viveralegreefelizcom-100601871990184/?modal=admin_todo_tour&notif_id=1610383825570294&notif_t=page_invite&ref=notif" class="btn-floating btn-sm text-dark" style="font-size:23px;"><i class="fab fa-youtube"></i></a>
+               </li>
+               <li class="list-inline-item">
+                <a href="https://www.facebook.com/Viveralegreefelizcom-100601871990184/?modal=admin_todo_tour&notif_id=1610383825570294&notif_t=page_invite&ref=notif" class="btn-floating btn-sm text-dark" style="font-size:23px;"><i class="fab fa-instagram"></i></a>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+      </div>
+    </footer><!-- End of Footer -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  </body>
+  <style>
+
+  footer{
+    font-family: 'Oswald', sans-serif;
+  }
+  nav{
+    font-family: 'Oswald', sans-serif;
+  }
+
+  </style>
+</html>

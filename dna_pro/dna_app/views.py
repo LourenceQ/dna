@@ -42,3 +42,6 @@ def quemsomos(request):
 
 def desenvolvimento_pessoal(request):
     return render(request,'dna_app/desenvolvimento_pessoal.html')
+
+def agendar(request):
+    return render(request,'dna_app/agendar.html')

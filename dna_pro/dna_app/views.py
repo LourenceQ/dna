@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from .models import Agendar
+from dna_app.forms import AgendarForm
+
 
 # Create your views here.
 def index(request):
@@ -42,3 +45,17 @@ def quemsomos(request):
 
 def desenvolvimento_pessoal(request):
     return render(request,'dna_app/desenvolvimento_pessoal.html')
+
+def agendar(request):
+    model = Agendar
+    form = AgendarForm
+    template_name = 'agendar.html'
+
+    if request.method == "POST":
+        form = AgendarForm(request.POST)
+        if form.is_valid():
+            form.save(commit=True)
+            return index(request)
+        else:
+            print('ERRO FORMULARIO INVÁLIDO')
+    return render(request,'dna_app/agendar.html',{'form':form})

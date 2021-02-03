@@ -11,7 +11,7 @@ class AgendarForm(forms.ModelForm):
             'sobrenome': forms.TextInput(attrs={'class':'form-control'}),
             'email': forms.TextInput(attrs={'class':'form-control'}),
             'cidade': forms.TextInput(attrs={'class':'form-control'}),
-            'estado': forms.TextInput(attrs={'class':'form-select'}),
+            'estado': forms.Select(attrs={'class':'form-select'}),
             'celular': forms.TextInput(attrs={'class':'form-control'}),
-            'observacoes': forms.TextInput(attrs={'class':'form-control'}),
+            'observacoes': forms.Textarea(attrs={'class':'form-control'}),
         }

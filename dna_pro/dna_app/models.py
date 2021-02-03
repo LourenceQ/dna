@@ -8,4 +8,4 @@ class Agendar(models.Model):
     cidade = models.CharField(max_length=254)
     estado = models.CharField(max_length=200)
     celular = models.IntegerField()
-    observacoes = models.TextField(max_length=5000)
+    observacoes = models.TextField(max_length=500)

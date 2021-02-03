@@ -1,5 +1,4 @@
 from django.contrib import admin
-from .models import Agendamento
-# Register your models here.
+from .models import Agendar
 
-admin.site.register(Agendamento)
+admin.site.register(Agendar)

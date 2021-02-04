@@ -5,7 +5,7 @@ from dna_app.forms import AgendarForm
 
 # Create your views here.
 def index(request):
-    return render(request,'dna_app/index.html',)
+    return render(request,'dna_app/index.html')
 
 def aconselhamento(request):
     return render(request,'dna_app/aconselhamento.html')

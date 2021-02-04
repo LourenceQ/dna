@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 # Create your models here.
 class Agendar(models.Model):
@@ -9,4 +10,5 @@ class Agendar(models.Model):
     estado = models.CharField(max_length=200)
     celular = models.IntegerField()
     observacoes = models.TextField(max_length=500)
+    created_date = models.DateTimeField(default=timezone.now)
 ## Teste

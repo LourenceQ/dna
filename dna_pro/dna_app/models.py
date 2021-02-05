@@ -9,6 +9,6 @@ class Agendar(models.Model):
     cidade = models.CharField(max_length=254)
     estado = models.CharField(max_length=200)
     celular = models.IntegerField()
-    observacoes = models.TextField(max_length=500)
+    observações = models.TextField(max_length=500)
     created_date = models.DateTimeField(default=timezone.now)
 ## Teste

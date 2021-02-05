@@ -37,25 +37,28 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a id='li_prog' href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Terapias Integrativas</a>
+              <a id='li_prog' href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Terapias Holísticas</a>
               <ul class="dropdown-menu">
                 <li>
-                  <a href="{% url 'dna_app:aconselhamento' %}" class="dropdown-item">Aconselhamento</a>
+                  <a href="{% url 'dna_app:terapias_integrativas' %}" class="dropdown-item">Terapias Integrativas</a>
                 </li>
                 <li id='li_design'>
+                  <a href="{% url 'dna_app:aconselhamento' %}" class="dropdown-item">Aconselhamento</a>
+                </li>
+                <li>
                   <a href="{% url 'dna_app:constelacao_familiar' %}" class="dropdown-item">Constelação Familiar</a>
                 </li>
                 <li>
-                  <a href="{% url 'dna_app:meditacao_mentalizacao' %}" class="dropdown-item">Meditação/Mentalização</a>
+                  <a href="{% url 'dna_app:meditacao_mentalizacao' %}" class="dropdown-item">Meditação & Mentalização</a>
                 </li>
                 <li>
-                  <a href="{% url 'dna_app:pnl' %}" class="dropdown-item">PNL</a>
-                </li>
-                <li>
-                  <a href="{% url 'dna_app:mandalas'%}" class="dropdown-item">Mandalas</a>
+                  <a href="{% url 'dna_app:arteterapia'%}" class="dropdown-item">Arteterapia</a>
                 </li>
                 <li>
                   <a href="{% url 'dna_app:agua_magnetizada'%}" class="dropdown-item">Água Magnetizada</a>
+                </li>
+                <li>
+                  <a href="{% url 'dna_app:pnl'%}" class="dropdown-item">PNL</a>
                 </li>
               </ul>
             </li>
@@ -70,10 +73,10 @@
                   <a href="{% url 'dna_app:introducao_constelacao_familiar' %}" class="dropdown-item">Introdução à Constelação Familiar</a>
                 </li>
                 <li>
-                  <a href="{% url 'dna_app:agua_magnetizada_saude' %}" class="dropdown-item">Água Magnetizada & Saúde</a>
+                  <a href="{% url 'dna_app:agua_magnetizada_saude' %}" class="dropdown-item">Arteterapia</a>
                 </li>
                 <li>
-                  <a href="{% url 'dna_app:arteterapia' %}" class="dropdown-item">Arteteraira</a>
+                  <a href="{% url 'dna_app:arteterapia' %}" class="dropdown-item">Água Magnetizada</a>
                 </li>
               </ul>
             </li>
@@ -118,29 +121,29 @@
               <div class="col-md col-lg-2 col-xl-2 mx-auto- mt-3">
                 <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Cadastro</h5>
                 <p>
-                  <a href="" class="text-dark" style="text-decoration: none;">Registrar</a>
+                  <a href="" class="text-dark" style="text-decoration: none;">Consultar</a>
                 </p>
                 <p>
-                  <a href="" class="text-dark" style="text-decoration: none;">Login</a>
+                  <a href="" class="text-dark" style="text-decoration: none;"></a>
                 </p>
                 <p>
-                  <a href="" class="text-dark" style="text-decoration: none;">Logout</a>
+                  <a href="" class="text-dark" style="text-decoration: none;"></a>
                 </p>
                 <p>
-                  <a href="" class="text-dark" style="text-decoration: none;">Informações</a>
+                  <a href="{% url 'dna_app:quemsomos' %}"  class="text-dark" style="text-decoration: none;">Quem Somos</a>
                 </p>
               </div>
 
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Contato</h5>
                 <p>
-                  <i class="fas fa-home mr-3 text-dark"></i>  Cataguases, MG, Brasil
+                  <i class="fas fa-home mr-3 text-dark"></i>  Barbacena, MG, Brasil
                 </p>
                 <p>
-                  <i class="fas fa-envelope mr-3 text-dark"></i>  edina@viveralegreefeliz.com
+                  <i class="fas fa-envelope mr-3 text-dark"></i>  edina@viveralegreefeliz.com.br
                 </p>
                 <p>
-                  <i class="fas fa-phone mr-3 text-dark"></i>  55 32 9 8458 9238
+                  <i class="fas fa-phone mr-3 text-dark"></i>  55 31 99196 6112
                 </p>
               </div>
            </div>

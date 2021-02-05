@@ -18,6 +18,7 @@ urlpatterns = [
     path('meditacao_mentalizacao/',views.meditacao_mentalizacao, name='meditacao_mentalizacao'),
     path('pnl/',views.pnl, name='pnl'),
     path('quemsomos/',views.quemsomos, name='quemsomos'),
-    path('agendar/',views.agendar,name='agendar')
+    path('agendar/',views.agendar,name='agendar'),
+    path('terapias_integrativas/',views.terapias_integrativas,name='terapias_integrativas')
 
 ]

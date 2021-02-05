@@ -46,6 +46,9 @@ def quemsomos(request):
 def desenvolvimento_pessoal(request):
     return render(request,'dna_app/desenvolvimento_pessoal.html')
 
+def terapias_integrativas(request):
+    return render(request,'dna_app/terapias_integrativas.html')
+
 def agendar(request):
     model = Agendar
     form = AgendarForm

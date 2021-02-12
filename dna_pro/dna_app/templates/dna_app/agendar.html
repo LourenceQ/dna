@@ -1,18 +1,28 @@
 {% extends "dna_app/base.html" %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% block content %}
 
-<div class="container col-md-8 col-lg-6 mx-auto my-5">
-  <div class="form-group">
-    <form method="POST">
-        {{ form.as_p }}
-        {% csrf_token %}
-        {% csrf_token %}
+    <div class="container col-md-8 col-lg-6 mx-auto my-5">
+      <div class="form-group">
+        <form method="POST">
+            {{ form.as_p }}
+            {% csrf_token %}
+            {% csrf_token %}
 
-      <button class="btn btn-warning my-3" type="submit">Agendar</button>
-  </div>
-</div>
+          <button class="btn btn-warning my-3" type="submit">Agendar</button>
+      </div>
+    </div>
 
-{% endblock %}
+    {% endblock %}
+  </body>
+
+</html>
 
 <!--
 
